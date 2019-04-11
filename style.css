@@ -1,154 +1,194 @@
-@media screen and (max-width: 599px){
-    main {
-        min-height: 100vh;
-        display: grid;
-        margin: 0;
-        grid-template-columns: 1fr;
-        grid-template-rows: 25px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr        grid-template-areas: "sidebar" 
-                            "header"
-                            "item1" 
-                            "item3"
-                            "item3"
-                            "item4"
-                            "item5"
-                            "item6"
-                            "item7"
-                            "item8"
-                            "item9"
-                            "item10"
-                            "item11"
-                            "item12"
-                            "footer"
-        }
-    }
-    *{
-        border: 1px solid black;
-    }
-    header {
-        align-items: center;
-        text-align: center;
-        background-color: rgb(240, 224, 202);
-
-    }
-    aside {
-        background-color: rgb(156, 167, 143);
-        text-align: center;
-        position: absolute;
-    }
-    .item1 { 
-        align-items: center;
-    }
-    .item2 {
-    
-    }
-    .item3 {
-    
-    }
-    .item4 {
-    
-    }
-    .item5 {
-    
-    }
-    .item6 {
-    
-    }
-    .item7 {
-    
-    }
-    .item8 {
-    
-    }
-    .item9 {
-    
-    }
-    .item10 {
-    
-    }
-    .item11 {
-    
-    }
-    .item12 {
-        
-    }
-
-
-/*
-@media screen and (max-width: 699px){
-
-main {
-        min-height: 100vh;
-        display: grid;
-        margin: 0;
-        grid-template-columns: 100px 100px;
-        grid-template-rows: 50px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 50px;
-        grid-template-areas:    "header" "header"
-                                "sidebar" "sidebar"
-                                "item1"  "item2"
-                                "item3"  "item4"
-                                "item5"  "item6"
-                                "item7"  "item8"
-                                "item9"  "item10"
-                                "item11" "item12"
-                                "footer"  "footer"                   
-    }                   
-}
-header {
-    display: flex;
+body {
     text-align: center;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 25px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header"
+                         "BigPic1"
+                         "P1"
+                         "SmallPic1"
+                         "P2"
+                         "SmallPic2"
+                         "P3"
+                         "SmallPic3"
+                         "P4"
+                         "SmallPic4"
+                         "P5"
+                         "BigPic2"
+                         "P6"
+                         "SmallPic5"
+                         "7P"
+                         "SmallPic6"
+                         "8P"
+                         "SmallPic7"
+                         "9P"
+                         "SmallPic8"
+                         "10P"
+                         "BigPic3"
+                         "P11"
+                         "footer";
+}
+
+header {
+    grid-area: header;
+
+}
+
+.BigPic1 {
+    grid-area: BigPic1;
     
 }
-.item1 {
 
-}
-.item2 {
-
-}
-.item3 {
-
-}
-.item4 {
-
-}
-.item5 {
-
-}
-.item6 {
-
-}
-.item7 {
-
-}
-.item8 {
-
-}
-.item9 {
-
-}
-.item10 {
-
-}
-.item11 {
-
-}
-.item12 {
-
+.P1 {
+    grid-area: P1;
 }
 
-@media screen and (min-width: 700px){
-    main {
-        min-height: 100vh;
-        display: grid;
-        margin: 0;
-        grid-template-columns: 50px 1fr 1fr 50px;
-        grid-template-rows: 25vh;
-        grid-template-areas: "sidebar" "sidebar" "sidebar" "sidebar"
-                             "header"  "header"  "header"  "header"
-                             "item1"   "item2"   "item3"   "item4"
-                             "item5"   "item6"   "item7"   "item8"
-                             "item9"   "item10"  "item11"  "item12"
-                            "footer"   "footer"  "footer"  "footer"
+.SmallPic1 {
+    grid-area: SmallPic1;
+    
+}
+
+.P2 {
+    grid-area: P2;
+}
+
+.SmallPic2 {
+    grid-area: SmallPic2;
+}
+
+.P3 {
+    grid-area: P3;
+}
+
+.SmallPic3 {
+    grid-area: SmallPic3;
+}
+
+.P4 {
+    grid-area: P4;
+}
+
+.SmallPic4 {
+    grid-area: SmallPic4;
+}
+
+.P5 {
+    grid-area: P5;
+}
+
+.BigPic2 {
+    grid-area: BigPic2;
+}
+
+.P6 {
+    grid-area: P6;
+}
+
+.SmallPic5 {
+    grid-area: SmallPic5;
+}
+
+.P7 {
+    grid-area: P7;
+}
+
+.SmallPic6 {
+    grid-area: SmallPic6;
+}
+
+.P8 {
+    grid-area: P8;
+}
+
+.SmallPic7 {
+    grid-area: SmallPic7;
+}
+
+.P9 {
+    grid-area: P9;
+}
+
+.SmallPic8 {
+    grid-area: SmallPic8;
+}
+
+.P10 {
+    grid-area: P10;
+}
+
+.BigPic3 {
+    grid-area: BigPic3;
+}
+
+.P11 {
+    grid-area: P11;
+}
+
+footer {
+    grid-area: footer;
+}
+
+div {
+    width: 100%;
+    height: auto;
+}
+
+
+
+@media screen and (min-width: 540px) {
+    body {
+        grid-template-rows: 25px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "header  header"
+                             "BigPic1  BigPic1"
+                             "P1      P1"
+                             "SmallPic1 SmallPic2"
+                             "P2        P3"
+                             "SmallPic3 SmallPic4"
+                             "P4        P5"
+                             "BigPic2   BigPic2"
+                             "P6        P6"
+                             "SmallPic5 SmallPic6"
+                             "P7         P8"
+                             "SmallPic7 SmallPic8"
+                             "P9         P10"
+                             "BigPic3   BigPic3"
+                             "P11       P11"
+                             "footer    footer";
     }
+
+
+    
 }
+
+
+
+@media screen and (min-width: 1088px) {
+    body {
+        grid-template-rows: 25px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "header header header header"
+                             "BigPic1 BigPic1 BigPic1 BigPic1" 
+                             "P1 P1 P1 P1"                         
+                             "SmallPic1 SmallPic2 SmallPic3 SmallPic4"
+                             "P2 P3 P4 P5"
+                             "BigPic2 BigPic2 BigPic2 BigPic2"
+                             "P6 P6 P6 P6"
+                             "SmallPic5 SmallPic6 SmallPic7 SmallPic8"
+                             "P7 P7 P9 P10"
+                             "BigPic3 BigPic3 BigPic3 BigPic3"
+                             "P11 P11 P11 P11"
+                             "footer footer footer footer";
+
+    }
+    
+    
+}
+
+* {
+    border: 1px black solid;
+}
+
+
